@@ -45,7 +45,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="{{route('cliente.crear')}}" class="nav-link active">
                       <i class="fa fa-plus-circle nav-icon"></i>
                       <p>Nuevo Cliente</p>
                     </a>
@@ -59,7 +59,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{route('calculator')}}" class="nav-link">
                   <i class="nav-icon fa fa-calculator"></i>
                   <p>
                     CALCULADORA
@@ -83,7 +83,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{route('gastos')}}" class="nav-link">
                       <i class="nav-icon fa fa-credit-card"></i>
                       <p>Listado de gastos</p>
                     </a>

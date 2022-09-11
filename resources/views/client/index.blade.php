@@ -25,7 +25,7 @@ Tabla de clientes
         </div>
         <!-- /.card-header -->
         <div class="card-body table-responsive p-0" style="min-height: 300px;">
-          <table class="table table-head-fixed">
+          <table class="table  table-hover">
             <thead>
               <tr>
                 <th>Cliente</th>
@@ -35,14 +35,14 @@ Tabla de clientes
                 <th>Edit</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="">
               <tr>
                 <td>Kevin Paz</td>
                 <td>$240</td>
                 <td>$100</td>
                 <td>140</td>
                 <td>
-                    <button class="btn btn-success"><i class="fa fa-pen"></i></button>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#EditClienteModal"><i class="fa fa-pen"></i></button>
                 </td>
               </tr>
             
@@ -55,4 +55,44 @@ Tabla de clientes
       <!-- /.card -->
     </div>
   </div>
+
+  <!-- modal editar cliente -->
+  <div class="modal fade" id="EditClienteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+                <label for="abonoA">Nombre: </label>
+                <input type="text" class="form-control" placeholder="Ejemplo: Juan Carlos">
+            </div>
+            <div class="form-group">
+                <label for="abonoA">Monto Prestado: </label>
+                <input type="text" class="form-control" placeholder="Ejemplo: 250">
+            </div>
+            <div class="form-group">
+                <label for="abonoA">Abono total: </label>
+                <input type="text" class="form-control" placeholder="Ejemplo: 100">
+            </div>
+           
+            
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="bntFormEditClient">Editar Cliente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+@endsection
+@section('scripts')
+    <script>
+        
+    </script>
 @endsection

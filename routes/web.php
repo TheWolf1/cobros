@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 
 use App\Http\Controllers\ClienteController;
-
+use App\Http\Controllers\GastosController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,7 +21,20 @@ Route::get('/', function () {
 })->name('home');
 
  Route::middleware(['auth'])->group(function () {
+
+
     Route::get('clientes', [ClienteController::class,'index'])->name('cliente');
+    Route::get('clientes/crear', [ClienteController::class,'create'])->name('cliente.crear');
+    Route::get('/calculator',function ()
+    {
+        # code...
+        return view('calculator.index');
+    })->name('calculator');
+
+    Route::get('/gastos',[GastosController::class,'index'])->name('gastos');
+
+
+
  });
  
 

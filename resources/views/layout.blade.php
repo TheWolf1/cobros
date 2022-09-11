@@ -22,7 +22,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('assets/dist/css/adminlte.min.css') }}">
 
-  
+  @yield('styles')
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -71,5 +71,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- Main.js -->
 <script src=" {{ asset('assets/dist/js/main.js') }} "></script>
 
+
+@yield('scripts')
 </body>
 </html>

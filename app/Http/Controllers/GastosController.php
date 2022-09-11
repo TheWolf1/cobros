@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ClienteController extends Controller
+class GastosController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ClienteController extends Controller
     public function index()
     {
         //
-        return view('client.index');
+        return view('gastos.index');
     }
 
     /**
@@ -25,7 +25,6 @@ class ClienteController extends Controller
     public function create()
     {
         //
-        return view('client.create');
     }
 
     /**
@@ -37,7 +36,6 @@ class ClienteController extends Controller
     public function store(Request $request)
     {
         //
-       
     }
 
     /**
@@ -83,11 +81,5 @@ class ClienteController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function __invoke()
-    {
-        # code...
-        return view('client.index');
     }
 }
