@@ -1,7 +1,8 @@
 @extends('layout')
 
+
 @section('title_page')
-    Lista de gastos
+Cajas de cobradores
 @endsection
 
 @section('mainContent')
@@ -12,16 +13,16 @@
                     <div >
                         <table class="table">
                             <thead>
-                                <th>Descripcion:</th>
+                                <th>Cobrador:</th>
+                                <th>Caja:</th>
                                 <th>Cantidad:</th>
-                                <th>Fecha:</th>
                                 <th>Editar:</th>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Gasto en gasolina</td>
-                                    <td>3</td>
-                                    <td>12/09/2022</td>
+                                    <td>Kevin PAz</td>
+                                    <td>Caja de Kevin</td>
+                                    <td>$150</td>
                                     <td>
                                         <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#gastoEditModal"><i class="fa fa-pen"></i></button>
                                     </td>

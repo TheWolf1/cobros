@@ -15,7 +15,7 @@
           <img src=" {{ asset('assets/dist/img/user2-160x160.jpg') }} " class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">kevin</a>
+          <a href="#" class="d-block">{{auth()->user()->name}}</a>
         </div>
       </div>
 
@@ -77,7 +77,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="{{route('gastos.crear')}}" class="nav-link ">{{-- si quieres que este activo pon la clase active --}}
                       <i class="fa fa-plus-circle nav-icon"></i>
                       <p>Nuevo Gasto</p>
                     </a>
@@ -91,13 +91,59 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{route('routes')}}" class="nav-link">
                   <i class="nav-icon fa fa-motorcycle"></i>
                   <p>
                     INICIAR RUTA
                     
                   </p>
                 </a>
+              </li>
+              <li class="nav-item ">{{-- se puede poner la clase menu-open --}}
+                <a href="#" class="nav-link">{{-- si quieres que este activo pon la clase active --}}
+                  <i class="nav-icon fa fa-box"></i>
+                  <p>
+                    CAJA
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{{route('caja.create')}}" class="nav-link">{{-- si quieres que este activo pon la clase active --}}
+                      <i class="fa fa-plus-circle nav-icon"></i>
+                      <p>Nueva caja</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('caja')}}" class="nav-link">
+                      <i class="nav-icon fa fa-database"></i>
+                      <p>Listado de cajas</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item ">{{-- se puede poner la clase menu-open --}}
+                <a href="#" class="nav-link">{{-- si quieres que este activo pon la clase active --}}
+                  <i class="nav-icon fa fa-user"></i>
+                  <p>
+                    USUARIOS
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{{route('users.create')}}" class="nav-link">{{-- si quieres que este activo pon la clase active --}}
+                      <i class="fa fa-plus-circle nav-icon"></i>
+                      <p>Nuevo usuario</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('users')}}" class="nav-link">
+                      <i class="nav-icon fa fa-users"></i>
+                      <p>Listado de usuarios</p>
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">

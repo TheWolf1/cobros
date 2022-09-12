@@ -1,4 +1,9 @@
 @extends('layout')
+
+
+@section('title_page')
+    Calculadora
+@endsection
 @section('mainContent')
     <div class="row">
         <div class="col-md-12">

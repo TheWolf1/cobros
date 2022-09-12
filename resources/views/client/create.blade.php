@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title_page')
-Tabla de clientes
+Nuevo de clientes
     
 @endsection
 @section('mainContent')

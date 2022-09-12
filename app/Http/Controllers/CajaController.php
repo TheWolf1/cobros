@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class GastosController extends Controller
+class CajaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class GastosController extends Controller
     public function index()
     {
         //
-        return view('gastos.index');
+        return view('caja.index');
     }
 
     /**
@@ -25,7 +25,7 @@ class GastosController extends Controller
     public function create()
     {
         //
-        return view("gastos.create");
+        return view('caja.create');
     }
 
     /**
